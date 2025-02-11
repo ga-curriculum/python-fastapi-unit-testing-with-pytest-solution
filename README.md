@@ -1,8 +1,8 @@
-# Python FastAPI Authorization Solution
+# Python FastAPI Unit Testing with Pytest Solution
 
 ## About
 
-This repo contains the solution code for the [Python FastAPI Authorization](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-authorization/canvas-landing-pages/fallback.html) Lesson
+This repo contains the solution code for the [Python FastAPI Unit Testing with Pytest](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-unit-testing-with-pytest/canvas-landing-pages/fallback.html) Lesson
 
 ## Getting Started
 
@@ -11,7 +11,7 @@ This repo contains the solution code for the [Python FastAPI Authorization](http
 2. Navigate into the project directory:
 
 ```sh
- cd python-fastapi-authorization-solution
+ cd python-fastapi-unit-testing-with-pytest-solution
 ```
 
 3. Install dependencies (this also creates the virtual environment if it doesn’t exist):
