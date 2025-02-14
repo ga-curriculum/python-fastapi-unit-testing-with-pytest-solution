@@ -26,9 +26,7 @@ This repo contains the solution code for the [Python FastAPI Unit Testing with P
  pipenv shell
 ```
 
-### Set up the database
-
-1. Set up your PostgreSQL database:
+5. Set up your PostgreSQL database:
 
    - Ensure PostgreSQL is installed and running on your machine.
    - Create a database named `teas_db` if it does not already exist:
@@ -37,7 +35,21 @@ This repo contains the solution code for the [Python FastAPI Unit Testing with P
 createdb teas_db
 ```
 
-2. Seed the database with initial data:
+6. Open the application in Visual Studio Code:
+
+```bash
+code .
+```
+
+7. The database connection string is defined in the `config/environment.py` file:
+
+```python
+db_URI = "postgresql://<username>@localhost:5432/teas_db"
+```
+
+> _Modify your database connection string to use your username as the `<username>`._
+
+8. Seed the database with initial data:
 
    - Run the `seed.py` file to reset the database by dropping existing tables and repopulating it with starter data:
 
@@ -47,7 +59,7 @@ pipenv run python seed.py
 
 > You should see output indicating the database was successfully seeded. If there are any errors, check the `db_URI` in the `config/environment.py` file.
 
-3. Start the development server:
+9. Start the development server:
 
 ```bash
 pipenv run uvicorn main:app --reload
@@ -55,23 +67,24 @@ pipenv run uvicorn main:app --reload
 
 > You should now have the app running. Visit [`http://127.0.0.1:8000`](http://127.0.0.1:8000) in your browser to confirm it’s working.
 
-4. Now you can test each endpoint using FastAPI’s built-in documentation.
+10. Now you can test each endpoint using FastAPI’s built-in documentation.
 
 > Navigate to FastAPI Documentation: Open [`http://localhost:8000/docs`](http://localhost:8000/docs) in your browser.
 
-### Notes on Configuration
+<br>
 
-- The database connection string and secret are defined in the `config/environment.py` file:
+### Troubleshooting PostgreSQL
+
+- The database connection string is defined in the `config/environment.py` file:
 
   ```python
   db_URI = "postgresql://<username>@localhost:5432/teas_db"
-  secret = "mysecretcode"
   ```
 
 - Ensure your PostgreSQL instance is configured to allow connections with the provided credentials.
 - **_Modify your database connection string to use your username as the `<username>`._**
 
-### Setting Up a User in PostgreSQL
+#### Setting Up a User in PostgreSQL
 
 To connect to a specific PostgreSQL user, use the following command:
 
