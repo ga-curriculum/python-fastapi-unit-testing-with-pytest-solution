@@ -2,7 +2,7 @@
 
 ## About
 
-This repo contains the solution code for the [Python FastAPI Unit Testing with Pytest](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-unit-testing-with-pytest/canvas-landing-pages/fallback.html) Lesson
+This repo contains the solution code for the [Python FastAPI Unit Testing with Pytest](https://ga-curriculum.github.io/python-fastapi-unit-testing-with-pytest/canvas-landing-pages/fallback.html) Lesson
 
 ## Getting Started
 
